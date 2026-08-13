@@ -1,0 +1,14 @@
+class Car:
+    number_of_wheels = 4
+
+    def __init__(self, brand):
+        self.brand = brand
+
+
+c1 = Car("Toyota")
+c2 = Car("Honda")
+c3 = Car("Hyundai")
+
+print(c1.brand, c1.number_of_wheels)
+print(c2.brand, c2.number_of_wheels)
+print(c3.brand, c3.number_of_wheels)
