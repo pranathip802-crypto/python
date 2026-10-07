@@ -11,4 +11,4 @@ for number in numbers:
 
 missing = expected_sum - actual_sum
 
-print("Missing number:", missing)
+print("Missing number:", missing)p80.py
