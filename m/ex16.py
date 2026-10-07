@@ -1,0 +1,36 @@
+import matplotlib.pyplot as plt
+months = ["Jan", "Feb", "Mar", "Apr"]
+sales = [100, 150, 120, 180]
+plt.subplot(2, 2, 1)
+plt.plot(months, sales) 
+plt.title("Line") 
+plt.subplot(2, 2, 2) 
+plt.bar(months, sales) 
+plt.title("Bar") 
+plt.subplot(2, 2, 3) 
+plt.hist(sales) 
+plt.title("Histogram") 
+plt.subplot(2, 2, 4) 
+plt.scatter(range(4), sales) 
+plt.title("Scatter")
+plt.tight_layout() 
+plt.show()
+fig, axes = plt.subplots(2, 2, figsize=(10, 7)) 
+axes[0, 0].plot(months, sales) 
+axes[0, 0].set_title("Line") 
+axes[0, 1].bar(months, sales) 
+axes[0, 1].set_title("Bar") 
+axes[1, 0].hist(sales) 
+axes[1, 0].set_title("Histogram") 
+axes[1, 1].scatter(range(4), sales) 
+axes[1, 1].set_title("Scatter") 
+plt.tight_layout()
+plt.show()
+plt.plot(months, sales) 
+plt.savefig("sales_chart.png")
+plt.savefig(
+        "sales_chart.png",
+            dpi=300,    
+            bbox_inches="tight" )
+plt.tight_layout() 
+plt.show()
